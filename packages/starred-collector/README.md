@@ -24,7 +24,7 @@ npm run build
 
 ```
 collections/
-├── fiqryq/
+├── athallarizky/
 │   ├── starred.md      ← human-readable knowledge base
 │   └── data.csv        ← machine-readable (for combine / RAG)
 ├── torvalds/
@@ -43,14 +43,14 @@ Fetches one user's starred repos, writes **both** `starred.md` + `data.csv`.
 # Collect your own stars -> collections/<self>/
 npx starred-collector collect
 
-# Collect another user -> collections/fiqryq/
-npx starred-collector collect --user fiqryq
+# Collect another user -> collections/athallarizky/
+npx starred-collector collect --user athallarizky
 
 # Only TypeScript repos, sorted by last updated
-npx starred-collector collect --user fiqryq --language TypeScript --sort updated
+npx starred-collector collect --user athallarizky --language TypeScript --sort updated
 
 # Flat list (no categories)
-npx starred-collector collect --user fiqryq --no-categories
+npx starred-collector collect --user athallarizky --no-categories
 ```
 
 ### `collect` options
@@ -75,7 +75,7 @@ starred by multiple users collapses to one row (highest-star version wins).
 npx starred-collector combine
 
 # Combine specific users only
-npx starred-collector combine --user fiqryq,torvalds
+npx starred-collector combine --user athallarizky,torvalds
 
 # Output to a custom dir (e.g. for RAG)
 npx starred-collector combine --output ./rag-data

@@ -84,11 +84,11 @@ starred-collector collect [options]
 # Collect your own stars -> collections/<self>/starred.md + data.csv
 starred-collector collect
 
-# Collect another user -> collections/fiqryq/starred.md + data.csv
-starred-collector collect --user fiqryq
+# Collect another user -> collections/athallarizky/starred.md + data.csv
+starred-collector collect --user athallarizky
 
 # Only TypeScript repos, sorted by last updated
-starred-collector collect --user fiqryq --language TypeScript --sort updated
+starred-collector collect --user athallarizky --language TypeScript --sort updated
 
 # Collect multiple users (call N times)
 starred-collector collect --user alice
