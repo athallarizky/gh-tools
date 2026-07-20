@@ -18,6 +18,8 @@
 |------|---------|------------------------|-----|--------|
 | **starred-collector** | Collect a user's starred repos into knowledge-base files (markdown + CSV) and merge multiple users' collections into a deduplicated catalog. Two subcommands: `collect` (one user) and `combine` (merge all/some). | "collect my GitHub stars", "collect testuser's starred repos", "combine all collections", "merge alice and bob's collections", "build a tool catalog for RAG" | `npx starred-collector collect --user <login>` | [`packages/starred-collector/SKILLS.md`](packages/starred-collector/SKILLS.md) |
 
+| **daily-work-log** | Collect a day's GitHub activity (commits, issues, PRs) for a given date into an agent-ready context bundle, then summarize it into a daily work log. One subcommand: `collect`. | "summarize my work today", "what did I do yesterday?", "collect my commits/issues/PRs for <date>", "write a daily work log" | `npx daily-work-log collect --date <yyyy-mm-dd>` | [`packages/daily-work-log/SKILLS.md`](packages/daily-work-log/SKILLS.md) |
+
 > Adding a tool? Append a row here and write its `packages/<name>/SKILLS.md`.
 
 ## Shared Conventions

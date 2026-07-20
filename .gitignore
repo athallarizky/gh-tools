@@ -21,6 +21,8 @@ npm-debug.log*
 
 # Output runs
 tmp-*/
+runs/
+**/runs/
 
 # Collected data (generated output, not source)
 collections/

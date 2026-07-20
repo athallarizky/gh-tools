@@ -7,6 +7,7 @@
 | Tool | Purpose | Docs |
 |------|---------|------|
 | [starred-collector](packages/starred-collector/) | Fetch + categorize a user's starred repos → markdown / json / csv | [SKILLS.md](packages/starred-collector/SKILLS.md) · [README](packages/starred-collector/README.md) |
+| [daily-work-log](packages/daily-work-log/) | Collect a day's GitHub activity (commits, issues, PRs) into an agent-ready context bundle | [SKILLS.md](packages/daily-work-log/SKILLS.md) · [README](packages/daily-work-log/README.md) |
 
 ## Requirements
 

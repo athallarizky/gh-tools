@@ -1,0 +1,27 @@
+{
+  "name": "daily-work-log",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Collect a day's GitHub activity (commits, issues, PRs) into an agent-ready context bundle.",
+  "bin": {
+    "daily-work-log": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^17.4.2",
+    "execa": "^9.6.0",
+    "zod": "^3.25.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
