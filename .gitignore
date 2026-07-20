@@ -23,6 +23,8 @@ npm-debug.log*
 tmp-*/
 runs/
 **/runs/
+org-repos/
+**/org-repos/
 
 # Collected data (generated output, not source)
 collections/

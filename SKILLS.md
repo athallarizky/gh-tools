@@ -20,6 +20,8 @@
 
 | **daily-work-log** | Collect a day's GitHub activity (commits, issues, PRs) for a given date into an agent-ready context bundle, then summarize it into a daily work log. One subcommand: `collect`. | "summarize my work today", "what did I do yesterday?", "collect my commits/issues/PRs for <date>", "write a daily work log" | `npx daily-work-log collect --date <yyyy-mm-dd>` | [`packages/daily-work-log/SKILLS.md`](packages/daily-work-log/SKILLS.md) |
 
+| **orgs-repo-cloner** | List and/or clone all repositories from a GitHub organization. Two subcommands: `list` (print clone URLs) and `clone` (bulk `git clone`). | "list all repos in <org>", "clone all of <org>'s repos", "mirror/backup an org", "get clone URLs for <org>" | `npx orgs-repo-cloner list --org <org>` | [`packages/orgs-repo-cloner/SKILLS.md`](packages/orgs-repo-cloner/SKILLS.md) |
+
 > Adding a tool? Append a row here and write its `packages/<name>/SKILLS.md`.
 
 ## Shared Conventions

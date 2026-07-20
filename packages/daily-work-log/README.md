@@ -46,13 +46,13 @@ Then read `./tmp-journal/runs/<date>/agent-input.md` and write your summary to
 
 ```bash
 # Today's activity for an org
-npx daily-work-log collect --date 2026-05-26 --timezone Asia/Jakarta --orgs kitabisa --output ./tmp-journal
+npx daily-work-log collect --date 2026-05-26 --timezone Asia/Jakarta --orgs my-org --output ./tmp-journal
 
 # Filter commits to one git identity
 npx daily-work-log collect --date 2026-05-26 --author-email you@example.com --output ./tmp-journal
 
 # Run via tsx without building (from repo root)
-npm run dev --workspace daily-work-log -- collect --date 2026-05-26 --orgs kitabisa --output ./tmp-journal
+npm run dev --workspace daily-work-log -- collect --date 2026-05-26 --orgs my-org --output ./tmp-journal
 ```
 
 ## Output files

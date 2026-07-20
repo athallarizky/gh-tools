@@ -75,7 +75,7 @@ daily-work-log collect --date <yyyy-mm-dd> [options]
 
 ```bash
 # Collect today's activity for an org -> <output>/runs/<date>/agent-input.md
-daily-work-log collect --date 2026-05-26 --timezone Asia/Jakarta --orgs kitabisa --output ./tmp-journal
+daily-work-log collect --date 2026-05-26 --timezone Asia/Jakarta --orgs my-org --output ./tmp-journal
 
 # Filter commits to one git identity
 daily-work-log collect --date 2026-05-26 --author-email you@example.com --output ./tmp-journal
