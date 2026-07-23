@@ -49,6 +49,18 @@ export const CATEGORIES: Category[] = [
     ],
   },
   {
+    name: "Editor / IDE / Coding Agents",
+    patterns: [
+      // Agent dev environments (ADEs) and multi-agent orchestration surfaces.
+      // Checked BEFORE "OS / Desktop" so a repo that merely integrates with
+      // ghostty (a terminal emulator) as one of many integrations — e.g. orca,
+      // an ADE for a fleet of parallel agents — is not swallowed by the
+      // desktop/OS bucket via the `ghostty` keyword.
+      /\b(agent.?ide|\bade\b|parallel.?agent|fleet of agent|worktrees)\b/,
+      /\b(\bneovim\b|\bvim\b|vscode|jetbrains|\bide\b|code editor|\bzed\b|coding agent|cursor|opencode)\b/,
+    ],
+  },
+  {
     name: "OS / Desktop / Mac & Linux",
     patterns: [
       /\b(macos app|\bgnome\b|gtk theme|\blinux\b|\btouchpad\b|libinput|ghostty|keyboard shortcut|browser extension|browser start|customizing which browser|\.desktop)\b/,
@@ -58,12 +70,6 @@ export const CATEGORIES: Category[] = [
     name: "Mobile / Desktop / Cross-Platform",
     patterns: [
       /\b(\bandroid\b|\bios\b|\bswift\b|\bflutter\b|react native|\btauri\b|\belectron\b|desktop app|cross-platform|mobile touch)\b/,
-    ],
-  },
-  {
-    name: "Editor / IDE / Coding Agents",
-    patterns: [
-      /\b(\bneovim\b|\bvim\b|vscode|jetbrains|\bide\b|code editor|\bzed\b|coding agent|cursor|opencode)\b/,
     ],
   },
   {

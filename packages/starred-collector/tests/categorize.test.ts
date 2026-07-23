@@ -62,6 +62,41 @@ describe("categorize", () => {
     expect(categorize(repo)).toBe("Backend / API / Database");
   });
 
+  it("routes an agent dev environment (orca) to Editor / IDE / Coding Agents, not OS/Desktop", () => {
+    // Regression: orca is an ADE for a fleet of parallel agents. It lists
+    // `ghostty` as one of many integration topics, which previously matched
+    // the "OS / Desktop / Mac & Linux" rule first. The new agent-IDE rule,
+    // checked before the OS/Desktop bucket, must win.
+    const repo = makeRepo(
+      "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      {
+        name: "orca",
+        topics: [
+          "ade",
+          "agent-ide",
+          "claude-code",
+          "ghostty",
+          "ide",
+          "orchestration",
+          "parallel-agents",
+          "terminal",
+          "worktrees",
+        ],
+      },
+    );
+    expect(categorize(repo)).toBe("Editor / IDE / Coding Agents");
+  });
+
+  it("routes a genuine ghostty-tagged desktop app to OS / Desktop (not Editor/IDE)", () => {
+    // Ensure the fix doesn't over-correct: a plain desktop app that just
+    // mentions ghostty (terminal emulator) without any agent-IDE signal still
+    // lands in OS / Desktop / Mac & Linux.
+    const repo = makeRepo("A macos app to customize ghostty keyboard shortcuts.", {
+      topics: ["ghostty", "macos"],
+    });
+    expect(categorize(repo)).toBe("OS / Desktop / Mac & Linux");
+  });
+
   it("routes a CLI terminal tool to DevTools", () => {
     const repo = makeRepo("A fast cli terminal tool with tui and fuzzy finder.");
     expect(categorize(repo)).toBe("DevTools / CLI / Terminal");
