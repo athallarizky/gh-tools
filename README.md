@@ -9,6 +9,7 @@
 | [starred-collector](packages/starred-collector/) | Fetch + categorize a user's starred repos → markdown / json / csv | [SKILLS.md](packages/starred-collector/SKILLS.md) · [README](packages/starred-collector/README.md) |
 | [daily-work-log](packages/daily-work-log/) | Collect a day's GitHub activity (commits, issues, PRs) into an agent-ready context bundle | [SKILLS.md](packages/daily-work-log/SKILLS.md) · [README](packages/daily-work-log/README.md) |
 | [orgs-repo-cloner](packages/orgs-repo-cloner/) | List and clone all repositories from a GitHub organization | [SKILLS.md](packages/orgs-repo-cloner/SKILLS.md) · [README](packages/orgs-repo-cloner/README.md) |
+| [portfolio-history](packages/portfolio-history/) | Scan local git repos and build a CV-ready portfolio summary | [SKILLS.md](packages/portfolio-history/SKILLS.md) · [README](packages/portfolio-history/README.md) |
 
 ## Requirements
 

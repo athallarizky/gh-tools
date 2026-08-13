@@ -12,10 +12,12 @@
     "test": "npm run test --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
-    "dev": "tsx"
+    "dev": "node api.js && tsx"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "tsx": "^4.19.0",
     "typescript": "^5.8.0",
     "vitest": "^2.1.0"

@@ -22,6 +22,8 @@
 
 | **orgs-repo-cloner** | List and/or clone all repositories from a GitHub organization. Two subcommands: `list` (print clone URLs) and `clone` (bulk `git clone`). | "list all repos in <org>", "clone all of <org>'s repos", "mirror/backup an org", "get clone URLs for <org>" | `npx orgs-repo-cloner list --org <org>` | [`packages/orgs-repo-cloner/SKILLS.md`](packages/orgs-repo-cloner/SKILLS.md) |
 
+| **portfolio-history** | Scan locally cloned Git repositories and build a CV-ready portfolio summary from commit activity. One subcommand: `scan`. | "build a portfolio from git history", "summarize what I developed at <org>", "generate a CV-ready summary from local repos" | `npx portfolio-history scan --since <yyyy-mm-dd> --until <yyyy-mm-dd>` | [`packages/portfolio-history/SKILLS.md`](packages/portfolio-history/SKILLS.md) |
+
 > Adding a tool? Append a row here and write its `packages/<name>/SKILLS.md`.
 
 ## Shared Conventions

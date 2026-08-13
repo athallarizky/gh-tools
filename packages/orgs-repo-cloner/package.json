@@ -12,7 +12,7 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "dev": "tsx src/cli.ts"
+    "dev": "node api.js && tsx src/cli.ts"
   },
   "dependencies": {
     "commander": "^12.1.0",
