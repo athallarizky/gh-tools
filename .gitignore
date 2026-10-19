@@ -31,4 +31,3 @@ output/
 # Collected data (generated output, not source)
 collections/
 **/collections/
-config.bat
